@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUNYX — 9 Lives • The Moon Always Watches</title>
+
+  <meta name="description" content="LUNYX — 9 lives on Solana. Stealth • Discipline • Community. Join the pack." />
+  <meta property="og:title" content="LUNYX — 9 Lives • The Moon Always Watches" />
+  <meta property="og:description" content="Join the pack. Telegram & Twitter inside." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0b0f2e, #000);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 80px 20px 40px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 20px 0;
+      letter-spacing: 3px;
+    }
+    .tagline {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border: 2px solid #00d4ff;
+      border-radius: 5px;
+      color: #00d4ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00d4ff;
+      color: #000;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #00d4ff;
+    }
+    .roadmap, .tokenomics {
+      text-align: left;
+      margin-top: 30px;
+    }
+    .roadmap li {
+      margin: 8px 0;
+    }
+    footer {
+      padding: 30px;
+      font-size: 0.9em;
+      background: #050716;
+      color: #666;
+    }
+    /* Stars background */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<header>
+  <h1>LUNYX</h1>
+  <div class="tagline">9 lives • The night is silent... but the moon always watches 🌙</div>
+  <a href="https://t.me/YOUR_TELEGRAM" class="btn">Join Telegram</a>
+  <a href="https://x.com/YOUR_TWITTER" class="btn">Follow on X</a>
+</header>
+
+<section>
+  <h2>What is LUNYX?</h2>
+  <p>LUNYX is more than a meme coin. Inspired by the myth of 9 lives, it rises under the moon to build a stealth, disciplined, and resilient community on Solana.</p>
+</section>
+
+<section>
+  <h2>Roadmap — 9 Lives</h2>
+  <ul class="roadmap">
+    <li>Life 1: Website + Telegram</li>
+    <li>Life 2: Launch on Pump.fun</li>
+    <li>Life 3: First 1,000 holders</li>
+    <li>Life 4: NFT integration</li>
+    <li>Life 5: CEX Listings</li>
+    <li>Life 6: Community Events</li>
+    <li>Life 7: Ecosystem Expansion</li>
+    <li>Life 8: Strategic Partnerships</li>
+    <li>Life 9: The Moon 🌙</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Tokenomics</h2>
+  <div class="tokenomics">
+    <p>Supply: TBA</p>
+    <p>Liquidity: Locked</p>
+    <p>Community Driven • No team allocation</p>
+  </div>
+</section>
+
+<footer>
+  <div>© <span id="y"></span> LUNYX — All rights reserved</div>
+  <div><small>LUNYX is a community-driven meme project. No financial guarantees. DYOR.</small></div>
+</footer>
+
+<script>
+  // Year auto update
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  // Stars effect
+  const canvas = document.getElementById("stars");
+  const ctx = canvas.getContext("2d");
+  let w, h;
+  function resize(){
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resize);
+  resize();
+  function drawStars(){
+    ctx.clearRect(0,0,w,h);
+    for(let i=0;i<120;i++){
+      ctx.beginPath();
+      ctx.arc(Math.random()*w, Math.random()*h, Math.random()*1.5, 0, Math.PI*2);
+      ctx.fillStyle = "#fff";
+      ctx.fill();
+    }
+  }
+  setInterval(drawStars, 1000);
+</script>
+</body>
+</html>
