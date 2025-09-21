@@ -89,10 +89,24 @@
 background-size: 80%;
 background-color: #000; /* ou autre couleur de fond qui s’harmonise */
 }
+  /* Logo en haut à droite */
+.logo-corner {
+  position: fixed;
+  top: 20px;          /* espace depuis le haut */
+  right: 20px;        /* espace depuis la droite */
+  width: 80px;        /* taille du logo */
+  height: auto;
+  z-index: 1000;      /* reste au-dessus */
+  cursor: pointer;    /* petit curseur clic */
+}
   </style>
 </head>
 <body>
 <canvas id="stars"></canvas>
+  <a href="https://x.com/LUNYXSOL" target="_blank">
+<img src="https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/logo.png"
+alt="LUNYX Logo" class="logo-corner">
+</a>
 <header>
   <h1>LUNYX</h1>
   <div class="tagline">9 lives • The night is silent... but the moon always watches 🌙</div>
@@ -161,6 +175,7 @@ background-color: #000; /* ou autre couleur de fond qui s’harmonise */
 </script>
 </body>
 </html>
+
 
 
 
