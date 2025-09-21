@@ -91,13 +91,22 @@ background-color: #000; /* ou autre couleur de fond qui s’harmonise */
 }
   /* Logo en haut à droite */
 .logo-corner {
-  position: fixed;
-  top: 30px;          /* espace depuis le haut */
-  right: 60px;        /* espace depuis la droite */
-  width: 300px;        /* taille du logo */
-  height: auto;
-  z-index: 1000;      /* reste au-dessus */
-  cursor: pointer;    /* petit curseur clic */
+position: fixed;
+top: 30px; /* espace depuis le haut */
+right: 60px; /* espace depuis la droite */
+width: 300px; /* taille sur desktop */
+height: auto;
+z-index: 1000; /* reste au-dessus */
+cursor: pointer; /* petit curseur clic */
+}
+
+/* Responsive : logo plus petit sur mobile */
+@media (max-width: 600px) {
+.logo-corner {
+width: 120px; /* taille réduite sur mobile */
+top: 15px;
+right: 20px;
+}
 }
   </style>
 </head>
@@ -174,6 +183,7 @@ background-color: #000; /* ou autre couleur de fond qui s’harmonise */
 </script>
 </body>
 </html>
+
 
 
 
