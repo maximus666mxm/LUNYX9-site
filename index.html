@@ -12,13 +12,23 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    body {
+    header, section, footer {
+    position: relative;
+    top: -80px; /* remonte tout le texte, ajuste la valeur si besoin */
+}
+  body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at top, #1d4ed8, #000); /* bleu lune -> noir */
-  color: #39ff14;  /* vert fluo par défaut pour tout le texte */
+  color: #39ff14; /* vert fluo pour tout le texte */
   text-align: center;
   overflow-x: hidden;
+
+  /* Fond en dégradé bleu nuit → noir */
+  background: radial-gradient(circle at top, #1d4ed8, #000);
+
+  /* Image du chat + lune par-dessus le dégradé */
+  background-image: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/chat-lune.jpg');
+  background-repeat: no
 }
 
 h1, h2, h3, p, li, a, .tagline, .btn, footer {
@@ -151,6 +161,7 @@ right: 20px;
 </script>
 </body>
 </html>
+
 
 
 
