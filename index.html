@@ -14,26 +14,28 @@
   <style>
   body {
   margin: 0;
+  padding: 0;
   font-family: 'Orbitron', sans-serif;
-  color: #39ff14; /* texte vert fluo */
+  color: #39ff14;
   text-align: center;
   overflow-x: hidden;
- margin-top;-200px;\
-  }
-  /* Image de fond (chat + lune) */
-  background: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/hero.jpg')
-              no-repeat center top;
-  background-size: 70%; /* ajuste la taille (plus petit que 100%) */
-  background-color: #000; /* noir autour de l'image */
+
+  /* fond en dégradé bleu nuit vers noir */
+  background: radial-gradient(circle at top, #1d4ed8, #000);
 }
 
-/* Remonte le texte global */
+/* tout le texte forcé en vert fluo */
+h1, h2, h3, p, li, a, .tagline, .btn, footer {
+  color: #39ff14 !important;
+}
+
+/* remonter le texte */
 header, section, footer {
   position: relative;
-  top: -500px; /* ajuste la valeur pour placer ton texte */
+  top: -120px;   /* ajuste la valeur (-80px, -120px, -150px) */
 }
 
-/* Boutons */
+/* bouton */
 .btn {
   display: inline-block;
   margin: 10px;
@@ -47,42 +49,16 @@ header, section, footer {
 
 .btn:hover {
   background: #39ff14;
-  color: #000;
-}
-
-/* Tout le texte forcé en vert fluo */
-h1, h2, h3, p, li, a, .tagline, .btn, footer {
-    color: #39ff14 !important;
-}
-
-/* Remonte le texte */
-header, section, footer {
-    position: relative;
-    top: -40px; /* ajuste selon besoin */
-}
-.btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  border: 2px solid #39ff14;   /* bordure verte fluo */
-  border-radius: 5px;
-  color: #39ff14 !important;   /* texte bouton vert fluo */
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #39ff14;
   color: #000; /* texte noir sur hover */
 }
 
+/* footer */
 footer {
   padding: 30px;
   font-size: 0.9em;
-  background: #0a0a0a; /* fond plus sombre */
+  background: #0a0a0a; /* fond sombre */
   color: #39ff14 !important;
 }
-    }
     /* Stars background */
     canvas {
       position: fixed;
@@ -186,6 +162,7 @@ right: 20px;
 </script>
 </body>
 </html>
+
 
 
 
