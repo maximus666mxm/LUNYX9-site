@@ -12,21 +12,41 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    color: #39ff14; /* vert fluo pour tout le texte */
-    text-align: center;
-    overflow-x: hidden;
+  body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #39ff14; /* texte vert fluo */
+  text-align: center;
+  overflow-x: hidden;
 
-    /* Fond en dégradé bleu nuit -> noir */
-    background: radial-gradient(circle at top, #1d4ed8, #000);
+  /* Image de fond (chat + lune) */
+  background: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/hero.jpg')
+              no-repeat center top;
+  background-size: 70%; /* ajuste la taille (plus petit que 100%) */
+  background-color: #000; /* noir autour de l'image */
+}
 
-    /* Image du chat + lune en fond */
-    background-image: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/logo.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 60%; /* réduit l’image */
+/* Remonte le texte global */
+header, section, footer {
+  position: relative;
+  top: -150px; /* ajuste la valeur pour placer ton texte */
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: 2px solid #39ff14;
+  border-radius: 5px;
+  color: #39ff14 !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #39ff14;
+  color: #000;
 }
 
 /* Tout le texte forcé en vert fluo */
@@ -165,6 +185,7 @@ right: 20px;
 </script>
 </body>
 </html>
+
 
 
 
