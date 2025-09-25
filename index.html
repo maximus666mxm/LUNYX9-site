@@ -12,29 +12,33 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    header, section, footer {
-    position: relative;
-    top: -80px; /* remonte tout le texte, ajuste la valeur si besoin */
-}
-  body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  color: #39ff14; /* vert fluo pour tout le texte */
-  text-align: center;
-  overflow-x: hidden;
+    body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #39ff14; /* vert fluo pour tout le texte */
+    text-align: center;
+    overflow-x: hidden;
 
-  /* Fond en dégradé bleu nuit → noir */
-  background: radial-gradient(circle at top, #1d4ed8, #000);
+    /* Fond en dégradé bleu nuit -> noir */
+    background: radial-gradient(circle at top, #1d4ed8, #000);
 
-  /* Image du chat + lune par-dessus le dégradé */
-  background-image: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/chat-lune.jpg');
-  background-repeat: no
+    /* Image du chat + lune en fond */
+    background-image: url('https://raw.githubusercontent.com/maximus666mxm/LUNYX9-site/main/logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 60%; /* réduit l’image */
 }
 
+/* Tout le texte forcé en vert fluo */
 h1, h2, h3, p, li, a, .tagline, .btn, footer {
-  color: #39ff14 !important; /* force tout en vert fluo */
+    color: #39ff14 !important;
 }
 
+/* Remonte le texte */
+header, section, footer {
+    position: relative;
+    top: -80px; /* ajuste selon besoin */
+}
 .btn {
   display: inline-block;
   margin: 10px;
@@ -161,6 +165,7 @@ right: 20px;
 </script>
 </body>
 </html>
+
 
 
 
