@@ -13,62 +13,40 @@
 
   <style>
     body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(circle at top, #0b0f2e, #000);
-      color: #39ff14;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    header {
-      padding: 80px 20px 40px;
-    }
-    h1 {
-      font-size: 3em;
-      margin: 20px 0;
-      letter-spacing: 3px;
-    }
-    .tagline {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #ccc;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      border: 2px solid #39ff14;
-      border-radius: 5px;
-      color: #39ff14;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #00d4ff;
-      color: #000;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 2em;
-      color: #39ff14;
-    }
-    .roadmap, .tokenomics {
-      text-align: left;
-      margin-top: 30px;
-    }
-    .roadmap li {
-      margin: 8px 0;
-    }
-    footer {
-      padding: 30px;
-      font-size: 0.9em;
-      background: #050716;
-      color: #b3b3b3;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #1d4ed8, #000); /* bleu lune -> noir */
+  color: #39ff14;  /* vert fluo par défaut pour tout le texte */
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, li, a, .tagline, .btn, footer {
+  color: #39ff14 !important; /* force tout en vert fluo */
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: 2px solid #39ff14;   /* bordure verte fluo */
+  border-radius: 5px;
+  color: #39ff14 !important;   /* texte bouton vert fluo */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #39ff14;
+  color: #000; /* texte noir sur hover */
+}
+
+footer {
+  padding: 30px;
+  font-size: 0.9em;
+  background: #0a0a0a; /* fond plus sombre */
+  color: #39ff14 !important;
+}
     }
     /* Stars background */
     canvas {
@@ -183,6 +161,7 @@ right: 20px;
 </script>
 </body>
 </html>
+
 
 
 
