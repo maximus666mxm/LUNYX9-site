@@ -38,7 +38,17 @@
 
 *{box-sizing:border-box}
 
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+html,body{
+  margin:0;
+  padding:0;
+  color:var(--text);
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+
+  /* Nouveau fond lunaire bleuté */
+  background: radial-gradient(circle at 50% 20%, rgba(70,110,255,0.25) 0%, rgba(15,20,30,0.9) 55%, rgba(5,8,15,1) 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 a{color:var(--accent);text-decoration:none}
 
