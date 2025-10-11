@@ -231,14 +231,22 @@ footer{
 
 
 
-/* ---------- Responsive ---------- */
+/* ----------- Responsive ----------- */
+@media (max-width: 720px) {
 
-@media (max-width:720px){
+  .hero h1 {
+    font-size: 28px;
+  }
 
-  .hero h1{font-size:28px}
+  .nav {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
-  .nav{gap:10px;flex-wrap:wrap}
-
+  /* Cacher le logo sur mobile */
+  .hero-logo, .logo, .logo-corner {
+    display: none;
+  }
 }
 
 </style>
