@@ -1,0 +1,441 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>LUNYX — Detailed Roadmap</title>
+
+<meta name="description" content="LUNYX — The 9 Lives of the Night. Detailed roadmap, utility direction and NFT integration." />
+
+<style>
+
+/* ---------- Theme ---------- */
+
+:root{
+
+  --bg:#0b0e13;           /* deep night */
+
+  --panel:#0f141c;        /* card bg */
+
+  --line:#1b2330;         /* borders */
+
+  --text:#e7ecf3;         /* main text */
+
+  --muted:#9aa6b2;        /* secondary text */
+
+  --accent:#86a3ff;       /* moon glow */
+
+  --accent-2:#78f0d6;     /* neon mint */
+
+  --accent-3:#ffd28a;     /* warm moon */
+
+}
+
+*{box-sizing:border-box}
+
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+
+a{color:var(--accent);text-decoration:none}
+
+a:hover{opacity:.9}
+
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+
+
+/* ---------- Header / Nav ---------- */
+
+header{
+
+  position:sticky;top:0;z-index:20;
+
+  backdrop-filter:saturate(120%) blur(10px);
+
+  background:linear-gradient(180deg,rgba(11,14,19,.9),rgba(11,14,19,.6) 70%,rgba(11,14,19,0));
+
+  border-bottom:1px solid var(--line);
+
+}
+
+.nav{display:flex;align-items:center;gap:16px;padding:12px 0}
+
+.logo{
+
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+
+  -webkit-background-clip:text;background-clip:text;color:transparent
+
+}
+
+.nav a{font-size:14px;color:var(--muted)}
+
+.nav a.active{color:var(--text);font-weight:600}
+
+
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+  padding:42px 0 18px;border-bottom:1px solid var(--line);
+
+}
+
+.hero h1{
+
+  margin:0 0 10px;font-size:34px;line-height:1.15;
+
+  text-shadow:0 0 18px rgba(134,163,255,.25)
+
+}
+
+.hero p{margin:0;color:var(--muted)}
+
+
+
+/* ---------- Sections / Cards ---------- */
+
+section{padding:28px 0}
+
+.card{
+
+  background:linear-gradient(180deg,var(--panel),#0c1118);
+
+  border:1px solid var(--line);border-radius:14px;
+
+  padding:22px;margin:16px 0;opacity:0;transform:translateY(14px);
+
+  transition:opacity .55s ease, transform .55s ease;
+
+}
+
+.card.in-view{opacity:1;transform:translateY(0)}
+
+.kicker{color:var(--accent-2);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+
+h3{margin:.25rem 0 8px;font-size:22px}
+
+.status{font-size:12px;color:var(--muted)}
+
+.list{margin:10px 0 0;padding-left:18px}
+
+.list li{margin:6px 0;color:#d8daea}
+
+blockquote{
+
+  margin:14px 0 0;padding-left:14px;border-left:3px solid var(--accent);
+
+  color:#d7d8ea;font-style:italic
+
+}
+
+
+
+/* ---------- Utility pills ---------- */
+
+.utility{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+
+.utility .pill{
+
+  display:inline-block;padding:8px 12px;border:1px solid var(--line);
+
+  border-radius:999px;background:#0c121a;color:var(--text);font-size:12px
+
+}
+
+.badge{
+
+  display:inline-block;margin-left:8px;padding:3px 8px;border-radius:999px;
+
+  background:linear-gradient(90deg,var(--accent-3),var(--accent-2));
+
+  color:#0b0e13;font-weight:700;font-size:11px
+
+}
+
+
+
+/* ---------- Footer ---------- */
+
+footer{
+
+  border-top:1px solid var(--line);margin-top:36px;padding:24px 0;color:var(--muted);
+
+  font-size:13px;text-align:center
+
+}
+
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:720px){
+
+  .hero h1{font-size:28px}
+
+  .nav{gap:10px;flex-wrap:wrap}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+  <div class="container nav">
+
+    <div class="logo">LUNYX</div>
+
+    <nav style="display:flex;gap:14px;margin-left:auto">
+
+      <a href="/" >Home</a>
+
+      <a href="#" class="active">Roadmap</a>
+
+      <a href="/#links">Links</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main class="container">
+
+  <section class="hero">
+
+    <h1>The 9 Lives of the Night</h1>
+
+    <p>LUNYX — Detailed roadmap, utility direction and NFT integration.</p>
+
+  </section>
+
+
+
+  <!-- LIFE I -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Life I</div>
+
+      <h3>The Awakening <span class="status">— Status: <strong>Complete</strong> ✅</span></h3>
+
+      <ul class="list">
+
+        <li>Token creation and bonding on Pump.fun</li>
+
+        <li>DEXTools listing & verification</li>
+
+        <li>Telegram community launched</li>
+
+        <li>Foundations of the LUNYX narrative: <em>“The night is ours.”</em></li>
+
+      </ul>
+
+      <blockquote>The cat was born in darkness — and it saw clearly.</blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- LIFE II -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Life II</div>
+
+      <h3>The Shadow Expansion <span class="status">— Status: <strong>Ongoing</strong> ⚙️</span></h3>
+
+      <ul class="list">
+
+        <li>Website launch (in progress)</li>
+
+        <li>Restoration of the official X account visibility</li>
+
+        <li>Organic growth toward <strong>50 holders</strong></li>
+
+        <li>Partnerships & influencer outreach</li>
+
+        <li>Rebuilding consistent trading activity</li>
+
+        <li>Regular updates on Telegram & DEXTools</li>
+
+      </ul>
+
+      <blockquote>Silence doesn’t mean weakness — it means focus.</blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- LIFE III -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Life III</div>
+
+      <h3>The Moonlight Phase <span class="status">— Status: <strong>Coming Soon</strong> 🌕</span></h3>
+
+      <ul class="list">
+
+        <li>Full roadmap + live metrics on the website</li>
+
+        <li>Return of marketing visibility (X + DEXTools)</li>
+
+        <li>Holder milestone: <strong>100+ unique wallets</strong></li>
+
+        <li>Community engagement expansion</li>
+
+        <li>Market cap stabilization & upward momentum</li>
+
+      </ul>
+
+      <blockquote>When the moon shines, LUNYX hunts in packs.</blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- LIFE IV -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Life IV</div>
+
+      <h3>The Night Empire <span class="status">— Status: <strong>Planned</strong> 🔮</span></h3>
+
+      <ul class="list">
+
+        <li>Strategic collaborations within the Solana meme ecosystem</li>
+
+        <li>Integration of NFT elements tied to the <em>Night Hunters</em> lore</li>
+
+        <li>Cross-project exposure with selected Solana communities</li>
+
+        <li>Exploration of future utilities to strengthen holder engagement</li>
+
+      </ul>
+
+      <blockquote>The night is not a place. It’s a power.</blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- UTILITY -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Utility</div>
+
+      <h3>The Cat’s Next Moves <span class="badge">NFT focus</span></h3>
+
+      <p>LUNYX will evolve through community vision and innovation. Future integrations are designed to reward early believers and empower active holders while expanding the project’s cultural footprint across Solana.</p>
+
+      <div class="utility">
+
+        <span class="pill">NFT Integration — <em>Night Hunters</em></span>
+
+        <span class="pill">Community Access & Roles</span>
+
+        <span class="pill">Future Utilities — community-driven</span>
+
+      </div>
+
+      <blockquote>The cat doesn’t reveal all its moves — only the next one.</blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- LIFE IX -->
+
+  <section>
+
+    <div class="card">
+
+      <div class="kicker">Life IX</div>
+
+      <h3>The Eternal Cycle</h3>
+
+      <p>Because the cat never dies — it evolves. Each silence, each fall, and each correction is another life. LUNYX adapts, rebuilds, and returns — again and again.</p>
+
+      <blockquote><strong>The cat never sleeps. The hunt never ends.</strong></blockquote>
+
+    </div>
+
+  </section>
+
+
+
+  <footer>
+
+    <div>© LUNYX — The Night Is Ours.</div>
+
+    <div id="links" style="margin-top:6px">
+
+      <a href="/">Home</a> ·
+
+      <a href="#">Roadmap</a> ·
+
+      <a href="https://dex.tools/" target="_blank" rel="noopener">DEXTools</a>
+
+    </div>
+
+  </footer>
+
+</main>
+
+
+
+<script>
+
+/* Simple intersection-observer to fade cards in */
+
+const cards = document.querySelectorAll('.card');
+
+const io = new IntersectionObserver(entries=>{
+
+  entries.forEach(e=>{
+
+    if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target) }
+
+  })
+
+},{threshold:.18});
+
+cards.forEach(c=>io.observe(c));
